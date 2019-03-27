@@ -68,13 +68,27 @@ public class InvasorTest {
     public void chocarGhostNave(){
         
         Nave n = new Nave (100, 100);
-        InvasorGhost ig = new Invasor (100, 100);
+        InvasorGhost ig = new InvasorGhost (100, 100);
         int vida = n.getVida();
         ig.chocarNave(n);
         
         assertEquals(n.getVida(), vida);
     }
     
+    @Test
+    public void destruirGhostNave(){
+        Nave n = new Nave (100, 100);
+        InvasorGhost ig = new InvasorGhost (100, 50);
+        
+        int vida = n.getVida();
+        
+        ig.destruirNave(n);
+        
+        int valor = ((ig.getVelocidad() * 20)/100);
+        vida = vida - valor;
+        
+        assertEquals(n.getVida(), vida);
+    }
     
 
     // TODO add test methods here.
