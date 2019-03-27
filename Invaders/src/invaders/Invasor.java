@@ -1,3 +1,5 @@
+package invaders;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,5 +18,10 @@ public class Invasor {
     public Invasor (int vida, int velocidad){
         this.vida = vida;
         this.velocidad = velocidad;
+    }
+
+    public int getVida() {
+        return 100;
+
     }
 }
