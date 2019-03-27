@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import ucp.invader.InvasorGhost;
 import ucp.invader.Invasor;
 import ucp.invader.Nave;
 import org.junit.After;
@@ -62,6 +63,19 @@ public class InvasorTest {
         
         assertEquals(n.getVida(), vida);
     }
+    
+    @Test
+    public void chocarGhostNave(){
+        
+        Nave n = new Nave (100, 100);
+        InvasorGhost ig = new Invasor (100, 100);
+        int vida = n.getVida();
+        ig.chocarNave(n);
+        
+        assertEquals(n.getVida(), vida);
+    }
+    
+    
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
