@@ -10,41 +10,16 @@ package ucp.invader;
  *
  * @author sala23Pc02
  */
-public class Invasor extends Artefacto{
+public class Invasor extends Personaje{
       
-    private int vida;
-    private int velocidad;
     
-    public Invasor (int vida, int pVelocidad){
-        super(pVelocidad);
-        this.setVida(vida);
+    
+    public Invasor (int pVelocidad, int vida){
+        super(pVelocidad, vida);
+        
     }
 
-    public int getVida() {
-        return vida;
 
-    }
-
-    /**
-     * @param vida the vida to set
-     */
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
-    /**
-     * @return the velocidad
-     */
-    public int getVelocidad() {
-        return velocidad;
-    }
-
-    /**
-     * @param velocidad the velocidad to set
-     */
-    public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
-    }
     
     public void chocarNave(Nave pNave){
         pNave.setVida(0);

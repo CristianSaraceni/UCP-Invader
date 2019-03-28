@@ -13,6 +13,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import ucp.invader.InvasorGhost;
 
 /**
  *
@@ -62,6 +63,16 @@ public class NaveTest {
         n.destruir(i);
         
         assertEquals(i.getVida(), 0);
+    }
+    @Test
+    public void destruirGhost(){
+        
+        Nave n = new Nave (100, 100);
+        InvasorGhost ig = new InvasorGhost (100, 100);
+        int vida = ig.getVida();
+        n.destruirGhost(ig);
+        
+        assertEquals(ig.getVida(), vida);
     }
     
     public NaveTest() {

@@ -13,14 +13,13 @@ import ucp.invader.Invasor;
  *
  * @author sala23Pc02
  */
-public class Nave extends Artefacto{
+public class Nave extends Personaje{
     
-    private int vida;
-    private int velocidad;
     
-    public Nave (int pVida, int pVelocidad){
-        super(pVelocidad);
-        this.setVida(pVida);
+    
+    public Nave ( int pVelocidad, int pVida){
+        super(pVelocidad, pVida);
+        
     }
     public void destruir(Invasor invasor){
         
@@ -32,32 +31,12 @@ public class Nave extends Artefacto{
         
         
     }
-
-    /**
-     * @return the vida
-     */
-    public int getVida() {
-        return vida;
+    public void destruirGhost(InvasorGhost invasor){
+       
+        
+        
     }
 
-    /**
-     * @param vida the vida to set
-     */
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
-    /**
-     * @return the velocidad
-     */
-    public int getVelocidad() {
-        return velocidad;
-    }
-
-    /**
-     * @param velocidad the velocidad to set
-     */
-    public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
-    }
+   
+    
 }
