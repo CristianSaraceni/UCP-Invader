@@ -74,7 +74,25 @@ public class NaveTest {
         
         assertEquals(ig.getVida(), vida);
     }
-    
+    @Test
+    public void destruirPersonajeInvasor(){
+        Nave n = new Nave (100, 100);
+        Invasor i = new Invasor (100, 100);
+        
+        n.destruir(i);
+        
+        assertEquals(i.getVida(), 0);
+    }
+    @Test
+    public void destruirPersonajeGhost(){
+         
+        Nave n = new Nave (100, 100);
+        InvasorGhost ig = new InvasorGhost (100, 100);
+        int vida = ig.getVida();
+        n.destruir(ig);
+        
+        assertEquals(ig.getVida(), vida);
+    }
     public NaveTest() {
     }
     

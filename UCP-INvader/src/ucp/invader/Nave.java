@@ -21,6 +21,17 @@ public class Nave extends Personaje{
         super(pVelocidad, pVida);
         
     }
+    public void destruir (Personaje personaje){
+        
+        if (personaje instanceof Invasor){
+            int vida = personaje.getVida();
+            int valor = ((personaje.getVelocidad() * this.getVelocidad())/100);
+            vida = vida - valor;
+        
+            personaje.setVida(vida);
+        }
+        
+    }
     public void destruir(Invasor invasor){
         
         int vida = invasor.getVida();
