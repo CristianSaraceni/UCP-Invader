@@ -13,13 +13,13 @@ import ucp.invader.Invasor;
  *
  * @author sala23Pc02
  */
-public class Nave {
+public class Nave extends Artefacto{
     
     private int vida;
     private int velocidad;
     
     public Nave (int pVida, int pVelocidad){
-        this.setVelocidad(pVelocidad);
+        super(pVelocidad);
         this.setVida(pVida);
     }
     public void destruir(Invasor invasor){

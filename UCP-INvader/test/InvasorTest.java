@@ -86,9 +86,10 @@ public class InvasorTest {
         
         int valor = ((ig.getVelocidad() * 20)/100);
         vida = vida - valor;
-        
+    
         assertEquals(n.getVida(), vida);
     }
+    
     
 
     // TODO add test methods here.

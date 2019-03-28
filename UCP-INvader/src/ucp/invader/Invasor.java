@@ -10,13 +10,13 @@ package ucp.invader;
  *
  * @author sala23Pc02
  */
-public class Invasor {
+public class Invasor extends Artefacto{
       
     private int vida;
     private int velocidad;
     
-    public Invasor (int vida, int velocidad){
-        this.setVelocidad(velocidad);
+    public Invasor (int vida, int pVelocidad){
+        super(pVelocidad);
         this.setVida(vida);
     }
 

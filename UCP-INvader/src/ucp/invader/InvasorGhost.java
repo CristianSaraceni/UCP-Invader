@@ -9,14 +9,14 @@ package ucp.invader;
  *
  * @author sala23Pc02
  */
-public class InvasorGhost {
+public class InvasorGhost extends Artefacto{
     
    
     private int vida;
     private int velocidad;
     
-    public InvasorGhost (int vida, int velocidad){
-        this.setVelocidad(velocidad);
+    public InvasorGhost (int vida, int pVelocidad){
+        super(pVelocidad);
         this.setVida(vida);
     }
 

@@ -9,12 +9,12 @@ package ucp.invader;
  *
  * @author VersaSH
  */
-public class Asteroide {
+public class Asteroide extends Artefacto {
     
     private int velocidad;
     
     public Asteroide (int pVelocidad){
-        this.setVelocidad(pVelocidad);
+        super(pVelocidad);
     }
     
 
