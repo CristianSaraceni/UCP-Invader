@@ -90,7 +90,16 @@ public class InvasorTest {
         assertEquals(n.getVida(), vida);
     }
     
-    
+    @Test
+    public void chocarGhostNave2(){
+
+        Nave n = new Nave(55,100);
+        InvasorGhost iG =  new InvasorGhost (100, 100);
+        int vida = n.getVida();
+        iG.chocarNave(n);
+        
+        assertEquals(n.getVida(),vida);
+    }
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:

@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 import ucp.invader.Nave;
-import ucp.invader.Nave;
 import ucp.invader.Invasor;
+import ucp.invader.InvasorVikingo;
 import ucp.invader.Asteroide;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -93,6 +93,34 @@ public class NaveTest {
         
         assertEquals(ig.getVida(), vida);
     }
+    
+    @Test
+    public void destruirPersonajeGhost2(){
+        
+        InvasorGhost iG = new InvasorGhost(50,25);
+        Nave n = new Nave(50,50);
+        int vida = iG.getVida();
+        n.destruir(iG);
+        
+        assertEquals(iG.getVida(), vida);
+    }
+    
+     @Test
+    public void destruirVikingo1(){
+        Nave nave = new Nave(100,50);
+        InvasorVikingo vikingo = new InvasorVikingo(100,100);
+        nave.destruir(vikingo);
+        assertEquals(vikingo.getVida(), 95);
+    }
+    
+    @Test
+    public void destruirVikingo2(){
+        Nave nave = new Nave(100,100);
+        InvasorVikingo vikingo = new InvasorVikingo(100,100);
+        nave.destruir(vikingo);
+        assertEquals(vikingo.getVida(), 90);
+    }
+    
     public NaveTest() {
     }
     
