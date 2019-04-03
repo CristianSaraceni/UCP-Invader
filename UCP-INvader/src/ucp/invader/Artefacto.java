@@ -9,7 +9,7 @@ package ucp.invader;
  *
  * @author sala23Pc02
  */
-public class Artefacto {
+public class Artefacto implements IChocable{
     private int velocidad;
     
     public Artefacto (int pVelocidad){
@@ -28,5 +28,15 @@ public class Artefacto {
      */
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
+    }
+
+    @Override
+    public void chocar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void chocate() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
