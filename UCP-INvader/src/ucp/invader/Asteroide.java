@@ -32,7 +32,7 @@ public class Asteroide extends Artefacto {
         this.velocidad = velocidad;
     }
     
-    public void chocarNave(Nave pNave){
+    public void chocar(Nave pNave){
         int vida = pNave.getVida();
         int valor = ((pNave.getVelocidad() * this.getVelocidad())/200);
         
@@ -42,12 +42,4 @@ public class Asteroide extends Artefacto {
     
     }
     
-    public void chocarInvasor(Invasor pInvasor){
-        int vida = pInvasor.getVida();
-        int valor = ((pInvasor.getVelocidad() * this.getVelocidad())/200);
-        
-        vida = vida - valor;
-        
-        pInvasor.setVida(vida);
-    }
 }
