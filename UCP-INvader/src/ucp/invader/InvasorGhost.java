@@ -18,7 +18,8 @@ public class InvasorGhost extends Personaje{
        
     }
     
-    public void chocarNave(Nave pNave){
+    @Override
+    public void chocar(IChocable victima){
         
     }
     

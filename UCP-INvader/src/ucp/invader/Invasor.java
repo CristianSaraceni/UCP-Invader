@@ -20,9 +20,9 @@ public class Invasor extends Personaje{
     }
 
 
-    
-    public void chocarNave(Nave pNave){
-        pNave.setVida(0);
+    @Override
+    public void chocar(IChocable victima){
+        victima.chocate(0);
     }
     
     public void destruirNave(Nave pNave){

@@ -22,4 +22,11 @@ public class InvasorVikingo extends Personaje{
         vida = vida - valor;
         this.setVida(vida);
     }
+    
+    @Override
+    public void chocar(IChocable victima){
+        victima.chocate((int) (this.getVelocidad()*0.9));
+    
+    }
+    
 }

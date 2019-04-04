@@ -31,12 +31,18 @@ public class Artefacto implements IChocable{
     }
 
     @Override
-    public void chocar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void chocar(IChocable victima) {
+       throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public void chocate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void chocate(int velocidad) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    
+
+ 
 }
+
+

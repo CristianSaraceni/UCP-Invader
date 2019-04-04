@@ -44,7 +44,7 @@ public class InvasorTest {
         Nave n = new Nave (100, 100);
         Invasor i = new Invasor (100, 100);
         
-        i.chocarNave(n);
+        i.chocar(n);
         
         assertEquals(n.getVida(), 0);
     }
@@ -70,7 +70,7 @@ public class InvasorTest {
         Nave n = new Nave (100, 100);
         InvasorGhost ig = new InvasorGhost (100, 100);
         int vida = n.getVida();
-        ig.chocarNave(n);
+        ig.chocar(n);
         
         assertEquals(n.getVida(), vida);
     }
@@ -96,7 +96,7 @@ public class InvasorTest {
         Nave n = new Nave(55,100);
         InvasorGhost iG =  new InvasorGhost (100, 100);
         int vida = n.getVida();
-        iG.chocarNave(n);
+        iG.chocar(n);
         
         assertEquals(n.getVida(),vida);
     }

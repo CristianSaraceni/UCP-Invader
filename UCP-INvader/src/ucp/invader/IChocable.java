@@ -10,7 +10,9 @@ package ucp.invader;
  * @author sala23Pc02
  */
 public interface IChocable {
-    public void chocar();
-    public int getVelocidad();
-    public void chocate();
+    void chocar(IChocable victima);
+    int getVelocidad();
+    void chocate(int vida);
+
+   
 }

@@ -34,4 +34,10 @@ public class Personaje extends Artefacto{
         this.vida = vida;
     }
     
+    
+    @Override
+    public void chocate(int vida) {
+       this.setVida(vida);
+    }
+
 }
